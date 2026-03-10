@@ -30,18 +30,55 @@ ai_service = st.session_state.ai_service
 
 st.markdown("""
 <style>
-    .main-container {
-        background: rgba(10, 25, 47, 0.6);
-        padding: 2rem;
-        border-radius: 16px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        margin-top: 2rem;
+    /* Global App Background */
+    [data-testid="stAppViewContainer"] {
+        background: radial-gradient(circle at top, #0a192f 0%, #000000 100%);
+        color: #e6f1ff;
     }
+    [data-testid="stHeader"] {
+        background: transparent;
+    }
+    
+    /* Main Container Glassmorphism */
+    .main-container {
+        background: rgba(10, 25, 47, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        padding: 2.5rem;
+        border-radius: 20px;
+        border: 1px solid rgba(59, 130, 246, 0.2);
+        margin-top: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Question Container Box */
     .question-box {
-        background: rgba(255, 255, 255, 0.05);
+        background: rgba(255, 255, 255, 0.03);
         padding: 1.5rem;
         border-radius: 12px;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        border-left: 4px solid #3b82f6;
+    }
+    
+    /* Primary Button Styling */
+    .stButton > button {
+        background: linear-gradient(45deg, #1e3a8a, #3b82f6) !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 8px !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
+    }
+    .stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4) !important;
+    }
+    
+    /* Radio Buttons / Options text coloring */
+    .stRadio > div {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 10px;
+        border-radius: 10px;
     }
 </style>
 """, unsafe_allow_html=True)
