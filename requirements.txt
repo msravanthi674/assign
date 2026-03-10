@@ -1,0 +1,10 @@
+fastapi==0.110.0
+uvicorn==0.28.0
+motor==3.7.1
+pydantic==2.6.3
+pydantic-settings==2.2.1
+# groq
+# google-generativeai
+openai
+python-dotenv==1.0.1
+mongomock-motor==0.0.36
