@@ -7,3 +7,4 @@ openai
 python-dotenv==1.0.1
 mongomock==4.1.2
 streamlit
+setuptools
