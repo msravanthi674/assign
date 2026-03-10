@@ -5,6 +5,6 @@ pydantic==2.6.3
 pydantic-settings==2.2.1
 openai
 python-dotenv==1.0.1
-mongomock==4.1.2
+mongomock>=4.3.0
 streamlit
 setuptools
